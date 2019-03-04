@@ -27,12 +27,16 @@ class UpgradeViewController: UIViewController {
     var weaponUpgrade: Int = 0
     var armorUpgrade: Int = 0
     var agilityUpgrade: Int = 0
-    var magicUpgrade: Int = 0
     
-    var strengthCost: Int = 100
-    var weaponCost: Int = 100
-    var armorCost: Int = 100
-    var agilityCost: Int = 100
+    let strengthCostBase = 10
+    let armorCostBase = 1000
+    let weaponCostBase = 10000
+    let agilityCostBase = 500000
+    
+    var strengthCost: Int = 10
+    var armorCost: Int = 1000
+    var weaponCost: Int = 10000
+    var agilityCost: Int = 500000
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,28 +54,49 @@ class UpgradeViewController: UIViewController {
 
     @IBAction func strengthButtonClicked(_ sender: Any) {
         InformationStats.gold = InformationStats.gold - strengthCost
-        
-        // Strength Damage Formula Here
-        InformationStats.DPS = InformationStats.DPS + (2 * strengthUpgrade + 1)
-        
         strengthUpgrade = strengthUpgrade + 1
+
+        // Strength Damage Formula Here
+        InformationStats.DPS = (2 * (strengthUpgrade + 1))
         
+        // Update
         updateStrengthCost()
-        updateDisplay()
         checkIfBuyable()
     }
     
     @IBAction func weaponButtonClicked(_ sender: Any) {
         InformationStats.gold = InformationStats.gold - weaponCost
-        InformationStats.DPS = InformationStats.DPS + (5 * weaponUpgrade + 1)
-        
         weaponUpgrade = weaponUpgrade + 1
+
         
+        // Weapon Formula
+        InformationStats.weaponDamage = InformationStats.weaponDamage + 5
         
+        // Update
+        updateWeaponCost()
+        checkIfBuyable()
     }
     @IBAction func armorButtonClicked(_ sender: Any) {
+        InformationStats.gold = InformationStats.gold - armorCost
+        armorUpgrade = armorUpgrade + 1
+
+        // Armor Formula
+        InformationStats.goldPerClick = (armorUpgrade + 1)
+        
+        // Update
+        updateArmorCost()
+        checkIfBuyable()
     }
     @IBAction func agilityButtonClicked(_ sender: Any) {
+        InformationStats.gold = InformationStats.gold - agilityCost
+        agilityCost = agilityCost + 1
+        
+        // Agility Formula
+        InformationStats.agilityMultiplier = InformationStats.agilityMultiplier + 1
+        
+        // Update
+        updateAgilityCost()
+        checkIfBuyable()
     }
 
     
@@ -99,12 +124,27 @@ class UpgradeViewController: UIViewController {
     }
     
     func updateStrengthCost(){
-        strengthCost = 100 + (strengthUpgrade * strengthCost)
-        
-        strengthCostLabel.text = "Cost: \(strengthCost)"
+        strengthCost = Int(strengthCostBase * Int(pow(1.15, Double(strengthUpgrade))))
+        updateDisplay()
+    }
+    func updateWeaponCost(){
+        weaponCost = Int(weaponCostBase * Int(pow(1.15, Double(weaponUpgrade))))
+        updateDisplay()
+    }
+    func updateArmorCost(){
+        armorCost = Int(armorCostBase * Int(pow(1.15, Double(armorUpgrade))))
+        updateDisplay()
+    }
+    func updateAgilityCost(){
+        agilityCost = Int(agilityCostBase * Int(pow(1.15, Double(agilityUpgrade))))
+        updateDisplay()
     }
     
     func updateDisplay(){
         goldLabel.text = "Gold: \(InformationStats.gold)"
+        strengthCostLabel.text = "Cost: \(strengthCost)"
+        weaponCostLabel.text = "Cost: \(weaponCost)"
+        armorCostLabel.text = "Cost: \(armorCost)"
+        agilityCostLabel.text = "Cost: \(agilityCost)"
     }
 }

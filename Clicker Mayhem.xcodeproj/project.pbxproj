@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		254D45CA22278F9300D80190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254D45C922278F9300D80190 /* AppDelegate.swift */; };
 		254D45CF22278F9300D80190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254D45CD22278F9300D80190 /* Main.storyboard */; };
-		254D45D122278F9600D80190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254D45D022278F9600D80190 /* Assets.xcassets */; };
 		254D45D422278F9600D80190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254D45D222278F9600D80190 /* LaunchScreen.storyboard */; };
 		254D45DC2227901300D80190 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254D45DB2227901300D80190 /* HomeViewController.swift */; };
 		257579792228C53500642AC4 /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257579782228C53500642AC4 /* UpgradeViewController.swift */; };
 		25B00D412229F1690018D476 /* InformationStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B00D402229F1690018D476 /* InformationStats.swift */; };
+		25B00D43222B29270018D476 /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B00D42222B29270018D476 /* MusicHelper.swift */; };
+		25B00D4B222B4A390018D476 /* Enemy_Dies.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25B00D4A222B4A390018D476 /* Enemy_Dies.mp3 */; };
+		25B00D55222CCDDA0018D476 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B00D54222CCDDA0018D476 /* Images.xcassets */; };
+		25B00D59222D10730018D476 /* Fantasy_Game_Background_Looping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25B00D58222D10730018D476 /* Fantasy_Game_Background_Looping.mp3 */; };
+		25B00D5B222D10AB0018D476 /* roblox-death-sound-effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25B00D5A222D10AB0018D476 /* roblox-death-sound-effect.mp3 */; };
+		25B00D5D222D10D00018D476 /* Sword2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25B00D5C222D10D00018D476 /* Sword2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		254D45C622278F9300D80190 /* Clicker Mayhem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clicker Mayhem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		254D45C922278F9300D80190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		254D45CE22278F9300D80190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		254D45D022278F9600D80190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254D45D322278F9600D80190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		254D45D522278F9600D80190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		254D45DB2227901300D80190 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		257579782228C53500642AC4 /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
 		25B00D402229F1690018D476 /* InformationStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationStats.swift; sourceTree = "<group>"; };
+		25B00D42222B29270018D476 /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
+		25B00D4A222B4A390018D476 /* Enemy_Dies.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Enemy_Dies.mp3; path = "../../../../../OneDrive - Cal State Fullerton/assets/8bit Sound Pack/mp3/Enemy_Dies.mp3"; sourceTree = "<group>"; };
+		25B00D54222CCDDA0018D476 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		25B00D58222D10730018D476 /* Fantasy_Game_Background_Looping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Fantasy_Game_Background_Looping.mp3; path = ../../../../../Downloads/sounds/Fantasy_Game_Background_Looping.mp3; sourceTree = "<group>"; };
+		25B00D5A222D10AB0018D476 /* roblox-death-sound-effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "roblox-death-sound-effect.mp3"; path = "../../../../../Downloads/sounds/roblox-death-sound-effect.mp3"; sourceTree = "<group>"; };
+		25B00D5C222D10D00018D476 /* Sword2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Sword2.mp3; path = ../../../../../Downloads/sounds/Sword2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,29 @@
 		254D45C822278F9300D80190 /* Clicker Mayhem */ = {
 			isa = PBXGroup;
 			children = (
+				25B00D48222B2E280018D476 /* sounds */,
 				254D45C922278F9300D80190 /* AppDelegate.swift */,
 				254D45CD22278F9300D80190 /* Main.storyboard */,
 				254D45DB2227901300D80190 /* HomeViewController.swift */,
+				25B00D42222B29270018D476 /* MusicHelper.swift */,
 				25B00D402229F1690018D476 /* InformationStats.swift */,
 				257579782228C53500642AC4 /* UpgradeViewController.swift */,
-				254D45D022278F9600D80190 /* Assets.xcassets */,
 				254D45D222278F9600D80190 /* LaunchScreen.storyboard */,
 				254D45D522278F9600D80190 /* Info.plist */,
+				25B00D54222CCDDA0018D476 /* Images.xcassets */,
 			);
 			path = "Clicker Mayhem";
+			sourceTree = "<group>";
+		};
+		25B00D48222B2E280018D476 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				25B00D58222D10730018D476 /* Fantasy_Game_Background_Looping.mp3 */,
+				25B00D5A222D10AB0018D476 /* roblox-death-sound-effect.mp3 */,
+				25B00D5C222D10D00018D476 /* Sword2.mp3 */,
+				25B00D4A222B4A390018D476 /* Enemy_Dies.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +151,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B00D5B222D10AB0018D476 /* roblox-death-sound-effect.mp3 in Resources */,
 				254D45D422278F9600D80190 /* LaunchScreen.storyboard in Resources */,
-				254D45D122278F9600D80190 /* Assets.xcassets in Resources */,
+				25B00D4B222B4A390018D476 /* Enemy_Dies.mp3 in Resources */,
+				25B00D5D222D10D00018D476 /* Sword2.mp3 in Resources */,
+				25B00D59222D10730018D476 /* Fantasy_Game_Background_Looping.mp3 in Resources */,
+				25B00D55222CCDDA0018D476 /* Images.xcassets in Resources */,
 				254D45CF22278F9300D80190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B00D43222B29270018D476 /* MusicHelper.swift in Sources */,
 				254D45CA22278F9300D80190 /* AppDelegate.swift in Sources */,
 				257579792228C53500642AC4 /* UpgradeViewController.swift in Sources */,
 				25B00D412229F1690018D476 /* InformationStats.swift in Sources */,

@@ -67,8 +67,8 @@
                                     <constraint firstAttribute="height" constant="32" id="om5-Ec-aAE"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Rjf-nI-3Hy">
-                                <rect key="frame" x="5" y="133" width="98" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Rjf-nI-3Hy">
+                                <rect key="frame" x="5" y="130.33333333333334" width="98" height="32"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stairsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="O4k-e8-pgC">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -84,11 +84,11 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="nvf-gL-mKr"/>
+                                    <constraint firstAttribute="height" constant="32" id="WFJ-RE-Eze"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O58-4W-bo0">
-                                <rect key="frame" x="5" y="96" width="87.333333333333329" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O58-4W-bo0">
+                                <rect key="frame" x="5" y="93.333333333333329" width="87.333333333333329" height="32"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="sK2-fe-vV1">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -108,7 +108,7 @@
                                 </constraints>
                             </stackView>
                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSq-dP-qiD">
-                                <rect key="frame" x="0.0" y="56.333333333333343" width="84.333333333333329" height="32"/>
+                                <rect key="frame" x="5" y="56.333333333333343" width="84.333333333333329" height="32"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swordIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FWE-fm-J2v">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
@@ -131,20 +131,20 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Rjf-nI-3Hy" firstAttribute="leading" secondItem="4h5-ey-DWH" secondAttribute="leading" id="4Xh-Gi-joc"/>
+                            <constraint firstItem="Rjf-nI-3Hy" firstAttribute="leading" secondItem="O58-4W-bo0" secondAttribute="leading" id="1cE-65-F3f"/>
                             <constraint firstItem="2EO-zT-ZPa" firstAttribute="top" secondItem="4h5-ey-DWH" secondAttribute="top" id="5yb-DN-tnQ"/>
                             <constraint firstItem="2EO-zT-ZPa" firstAttribute="top" secondItem="4h5-ey-DWH" secondAttribute="top" id="CxX-ym-8U7"/>
                             <constraint firstItem="ckg-yR-Ggi" firstAttribute="top" secondItem="2EO-zT-ZPa" secondAttribute="bottom" constant="5" id="Lrz-VT-3eD"/>
                             <constraint firstItem="7Fp-cQ-eZt" firstAttribute="centerX" secondItem="89U-zQ-iSO" secondAttribute="centerX" id="Njp-76-rQr"/>
                             <constraint firstItem="7Fp-cQ-eZt" firstAttribute="centerY" secondItem="89U-zQ-iSO" secondAttribute="centerY" id="TeG-r1-Akb"/>
                             <constraint firstItem="O58-4W-bo0" firstAttribute="top" secondItem="wSq-dP-qiD" secondAttribute="bottom" constant="5" id="dyi-dr-Xnh"/>
-                            <constraint firstItem="wSq-dP-qiD" firstAttribute="leading" secondItem="4h5-ey-DWH" secondAttribute="leading" id="ety-N1-S9N"/>
-                            <constraint firstItem="O58-4W-bo0" firstAttribute="leading" secondItem="89U-zQ-iSO" secondAttribute="leading" id="fho-OK-5TT"/>
+                            <constraint firstItem="O58-4W-bo0" firstAttribute="leading" secondItem="89U-zQ-iSO" secondAttribute="leading" constant="5" id="fho-OK-5TT"/>
                             <constraint firstItem="wSq-dP-qiD" firstAttribute="top" secondItem="2EO-zT-ZPa" secondAttribute="bottom" constant="5" id="in3-Xc-cW2"/>
+                            <constraint firstItem="wSq-dP-qiD" firstAttribute="leading" secondItem="4h5-ey-DWH" secondAttribute="leading" constant="5" id="lVF-08-CRP"/>
                             <constraint firstItem="2EO-zT-ZPa" firstAttribute="leading" secondItem="89U-zQ-iSO" secondAttribute="leading" constant="5" id="nV4-V9-ubE"/>
                             <constraint firstItem="4h5-ey-DWH" firstAttribute="trailing" secondItem="ckg-yR-Ggi" secondAttribute="trailing" id="p8Q-TS-nKj"/>
                             <constraint firstAttribute="trailing" secondItem="2EO-zT-ZPa" secondAttribute="trailing" constant="5" id="vOm-pU-slZ"/>
-                            <constraint firstItem="Rjf-nI-3Hy" firstAttribute="top" secondItem="O58-4W-bo0" secondAttribute="bottom" constant="5" id="yjl-sb-eQY"/>
+                            <constraint firstItem="Rjf-nI-3Hy" firstAttribute="top" secondItem="O58-4W-bo0" secondAttribute="bottom" constant="5" id="yCE-kL-M5E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4h5-ey-DWH"/>
                         <connections>
@@ -237,32 +237,8 @@
                                         </subviews>
                                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-eB-W59">
-                                        <rect key="frame" x="0.0" y="270" width="382" height="127"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="270" verticalHuggingPriority="251" text="Weapon Upgrade" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzM-us-JNj">
-                                                <rect key="frame" x="0.0" y="0.0" width="124" height="127"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX3-vg-HSO">
-                                                <rect key="frame" x="129" y="0.0" width="124" height="127"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0g-9f-Q9c">
-                                                <rect key="frame" x="258" y="0.0" width="124" height="127"/>
-                                                <state key="normal" backgroundImage="upgrade"/>
-                                                <connections>
-                                                    <action selector="weaponButtonClicked:" destination="JYn-ne-T5K" eventType="touchUpInside" id="WDi-DQ-WT6"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4kr-iE-Ngt">
-                                        <rect key="frame" x="0.0" y="405" width="382" height="127"/>
+                                        <rect key="frame" x="0.0" y="270" width="382" height="127"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="270" verticalHuggingPriority="251" text="Armor Upgrade" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zK9-f8-2HD">
                                                 <rect key="frame" x="0.0" y="0.0" width="124" height="127"/>
@@ -281,6 +257,30 @@
                                                 <state key="normal" backgroundImage="upgrade"/>
                                                 <connections>
                                                     <action selector="armorButtonClicked:" destination="JYn-ne-T5K" eventType="touchUpInside" id="goC-AB-m6l"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-eB-W59">
+                                        <rect key="frame" x="0.0" y="405" width="382" height="127"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="270" verticalHuggingPriority="251" text="Weapon Upgrade" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzM-us-JNj">
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="127"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX3-vg-HSO">
+                                                <rect key="frame" x="129" y="0.0" width="124" height="127"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0g-9f-Q9c">
+                                                <rect key="frame" x="258" y="0.0" width="124" height="127"/>
+                                                <state key="normal" backgroundImage="upgrade"/>
+                                                <connections>
+                                                    <action selector="weaponButtonClicked:" destination="JYn-ne-T5K" eventType="touchUpInside" id="WDi-DQ-WT6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
